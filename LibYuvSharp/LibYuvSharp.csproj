@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net461;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net48</TargetFrameworks>
     <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
     <Platforms>x64</Platforms>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,7 +32,7 @@
       <Pack>true</Pack>
     </Content>
     <Content Include="lib/Lennox.LibYuvSharp.targets">
-      <PackagePath>lib/netstandard2.0;lib/net461;build/net461;build</PackagePath>
+      <PackagePath>lib/netstandard2.0;lib/net48;build</PackagePath>
       <Pack>true</Pack>
     </Content>
   </ItemGroup>
